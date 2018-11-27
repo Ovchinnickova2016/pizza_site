@@ -11,6 +11,5 @@ urlpatterns = [
     re_path(r'^register', register, name='register'),
     re_path(r'^contacts', contacts, name='contacts'),
     re_path(r'^delivery', delivery, name='delivery'),
-    re_path(r'^register', register, name='register'),
     re_path(r'^vacations', vacations, name='vacations'),
 ]
