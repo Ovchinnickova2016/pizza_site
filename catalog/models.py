@@ -6,7 +6,7 @@ class Product(models.Model):
     price = models.FloatField("Цена",max_length=512, blank=True, null=True)
     image = models.ImageField(upload_to='uploads/%Y/%m/%d/', blank=True, verbose_name="Изображение товара")
     description = models.TextField(blank=True, verbose_name="Описание")
-    category = models.ForeignKey(Category, related_name='products', verbose_name="Категория")
+    category = models.ForeignKey('Category', related_name='products', verbose_name="Категория")
 
     class Meta:
         ordering = ['name']
