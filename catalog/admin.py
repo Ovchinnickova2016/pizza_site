@@ -4,11 +4,9 @@ from .models import Category, Product
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ("name","slug")
+    list_display = ("name")
 
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ("name", "slug", "price")
-    list_filter = ("name", "price")
-    list_editable = ("price")
+    list_display = ("name", "price")
